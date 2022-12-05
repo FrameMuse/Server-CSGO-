@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Херня</title>
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/fonts/Glyphicons.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="assets/img/favicon.png" type="image/x-icon"> 
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <nav class="topbar">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </nav>
+        <header>
+            
+        </header>
+        <div class="sidebar-nav-flat">
+            <div class="element main account">
+                <a class="fake" href="#"></a>
+            </div>
+            <div class="wrap">
+                <div class="element list">
+                    <a class="fake" href="#"></a>
+                </div>
+                <div class="element stats">
+                    <a class="fake" href="#"></a>
+                </div>
+                <div class="element servers">
+                    <a class="fake" href="#"></a>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            &copy; 2018 Jopa.com - Все права защищены.
+        </footer>
+        <script src="https://snayplay.ru/js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                     var pos_scroll = $("html").scrollTop();
+                    
+                    if (pos_scroll != 0) {
+                        $("nav.topbar").css({"box-shadow": "0 0 35px -14px black"});
+                    } else {
+                        $("nav.topbar").css({"box-shadow": "unset"});
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

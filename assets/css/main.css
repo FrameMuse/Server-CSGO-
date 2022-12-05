@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: .3s ease-in-out;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100000px;
+    /* background: black; */
+}
+
+img {
+    will-change: transform;
+}
+
+a {
+    text-decoration: none;
+}
+a.fake {
+    height: inherit;
+    width: inherit;
+    padding: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+header {
+    position: relative;
+    padding: 10em 0;
+}
+header:before {
+    background: url(https://counter-strike.com.ua/uploads/images/backgrounds/csgo-operation-hydra-background_2323/screen1.jpg) no-repeat center top;
+    filter: brightness(0.5);
+    background-size: cover;
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    will-change: transform;
+    z-index: -1;
+}
+.content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+header .block-text {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}
+header #tag-white {
+    padding: 10px 15px;
+    background: white;
+    color: #333;
+    border-radius: 30px;
+}
+header .block-buttons {
+    width: 40%;
+    margin: 2em auto 0;
+    display: flow-root;
+}
+.block-buttons a.first-button, .block-buttons a.second-button {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+.block-buttons a.first-button {
+    float: left;
+    background: #455437;
+}
+.block-buttons a.second-button {
+    float: right;
+    background: #293324;
+}
+
+
+
+
+
+
+
+nav.topbar {
+    padding: 25px;
+    max-height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+nav.topbar a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+nav.topbar.toggle {
+    background: white;
+    box-shadow: 0 0 35px -14px black;
+}
+nav.topbar.toggle a {
+    color: #333;
+}
+
+
+
+.sidebar-nav-flat {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80px;
+}
+.sidebar-nav-flat .element {
+    padding: 13px 15px;
+    margin: 10px 15px;
+    height: 50px;
+    width: 50px;
+    background: white;
+    box-shadow: 0 0 15px -6px black;
+    border-radius: 100%;
+    color: #333;
+    font-size: 20px;
+    display: inline-block;
+    position: relative;
+    font-family: "Glyphicons Halflings";
+    z-index: 9999;
+}
+.sidebar-nav-flat .element.main {
+    margin: 4em 15px;
+}
+.sidebar-nav-flat .account:before {
+    content: "\e008";
+}
+.sidebar-nav-flat .list:before {
+    content: "\e012";"
+}
+.sidebar-nav-flat .servers:before {
+    content: "\e137";
+}
+.sidebar-nav-flat .stats:before {
+    content: "\e018";
+}
+.sidebar-nav-flat .cog:before {
+    content: "\e019";
+}
+.sidebar-nav-flat .element:hover {
+    color: white;
+    background: #ccc;
+}
+.sidebar-nav-flat .wrap {
+    position: absolute;
+    top: 68px;
+    left: -100%;
+    bottom: 0;
+    padding-top: 70px;
+    width: 100%;
+    background: #888787;
+    box-shadow: 0 0 35px -14px black;
+}
+.sidebar-nav-flat .element.main:hover ~ .wrap, .wrap:hover {
+    left: 0%;
+}
+.block-features {
+    /*background: linear-gradient(90deg, #5881de 30%, #ce4343 80%);
+    background: #ccc;*/
+    box-shadow: 0 0 35px -6px black;
+}
+.block-features .content {
+    padding: 3em 0;
+}
+.block-features .feature {
+    padding: 2em 1em;
+    display: inline-grid;
+    margin: 0 62px;
+    /*background: rgba(255,255,255,0.7);*/*/
+    border-radius: 14px;
+    width: 240px;
+    /*box-shadow: 0 0 15px -4px black;*/
+}
+.feature span:before {
+    content: inherit;
+    display: inline-flex;
+    height: inherit;
+    width: inherit;
+}
+.feature span {
+    height: 120px;
+    width: 100px;
+    margin: 0 auto;
+}
+.feature span#table-t {
+    content: url("fonts/table-t.svg");
+}
+.feature span#desk-stats {
+    content: url("fonts/desk-stats.svg");
+}
+.feature span#cart {
+    content: url("fonts/cart.svg");
+}
+.feature .text {
+    text-align: center;
+    height: inherit;
+    padding-top: 1em;
+    line-height: normal;
+    color: #333;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>SnayArmy - CS:GO Сервера Снея</title>
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/fonts/Glyphicons.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="assets/img/favicon.png" type="image/x-icon"> 
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+        <nav class="topbar">
+            <div class="content">
+                <a href="#">Home</a>
+                <a href="#">Policy</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contacts</a>
+            </div>
+        </nav>
+        <header>
+            <div class="content">
+                <div class="block-text">
+                    <span id="tag-white">Hello</span>, We are glad to welcome you on our site!<br>
+                    You can choose one server to play in <span id="tag-white">CS:GO</span>
+                </div>
+                <div class="block-buttons">
+                    <a class="first-button" href="#first">Choose the server</a>
+                    <a class="second-button" href="#second">Log in</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="block-features">
+                <div class="content">
+                    <section class="feature">
+                        <span id="table-t"></span>
+                        <div class="text">
+                            <b>Введение Логов</b> в реальном времени, вы можете просматривать их прямо на сайте, наблюдая за повидением игроков их статистикой серверов
+                        </div>
+                    </section>
+                    <section class="feature">
+                        <span id="desk-stats"></span>
+                        <div class="text">
+                            <b>Маленькая Задержка</b> наших серверов, так как у нас стоят самые новые, технологичные сервера, а так же благодоря особым решениям программистов
+                        </div>
+                    </section>
+                    <section class="feature">
+                        <span id="cart"></span>
+                        <div class="text">
+                            <b>Купить Донат</b> вы можете 
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+            <div class="block-servers">
+                <div class="separate">
+                    <div class="block-left">
+                        <div class="server">
+                            <div class="type">SnayArmy</div>
+                            <div class="description">
+                                <img src="" class="image">
+                                <div class="title">PUBLIC</div>
+                                <div class="number">13\30</div>
+                            </div>
+                        </div>
+                        <div class="server">
+                            <div class="type">SnayArmy</div>
+                            <div class="description">
+                                <img src="" class="image">
+                                <div class="title">PUBLIC</div>
+                                <div class="number">13\30</div>
+                            </div>
+                        </div>
+                        <div class="server">
+                            <div class="type">SnayArmy</div>
+                            <div class="description">
+                                <img src="" class="image">
+                                <div class="title">PUBLIC</div>
+                                <div class="number">13\30</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-right">
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="sidebar-nav-flat">
+            <div class="element main account">
+                <a class="fake" href="#"></a>
+            </div>
+            <div class="wrap">
+                <div class="element list">
+                    <a class="fake" href="#"></a>
+                </div>
+                <div class="element stats">
+                    <a class="fake" href="#"></a>
+                </div>
+                <div class="element servers">
+                    <a class="fake" href="#"></a>
+                </div>
+                <div class="element cog">
+                    <a class="fake" href="#"></a>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="content">
+                &copy; 2018 Jopa.com - Все права защищены.
+            </div>
+        </footer>
+        <script src="https://snayplay.ru/js/jquery.min.js"></script>
+        <script>
+            function scroll_toggle() {
+                var pos_scroll = $("html").scrollTop();
+                    
+                    if (pos_scroll != 0) {
+                        $("nav.topbar").addClass("toggle");
+                    } else {
+                        $("nav.topbar").removeClass("toggle");
+                    }
+            }
+            
+            $(document).ready(function(){
+                scroll_toggle();
+                $(window).scroll(function(){
+                    scroll_toggle();
+                });
+            });
+        </script>
+    </body>
+</html>
